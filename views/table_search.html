@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../resources/css/bootstrap/renewal.css">
+
+    <script type="text/javascript" src="../resources/js/lib/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../resources/js/bootstrap/bootstrap2.js"></script>
+    <script>
+        /* 3자리 수마다 콤마 적용 */
+        $(document).on('keyup', 'input[inputmode=numeric]', function (event) {
+            this.value = this.value.replace(/[^0-9]/g, ''); // 입력값이 숫자가 아니면 공백
+            this.value = this.value.replace(/,/g, ''); // ,값 공백처리
+            this.value = this.value.replace(/\B(?=(\d{3})+(?!\d))/g, ","); // 정규식을 이용해서 3자리 마다 , 추가
+        });
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- //header -->
+        <header id="lnb">
+            <a href="javascript:void(0);" onclick="" class="btn_prev">이전</a>
+            <h1>정기예금</h1>
+            <a href="javascript:void(0)" class="btn_menu">메뉴</a>
+        </header>
+        <form>
+            <div class="contents-wrap">
+                <section class="form-wrap">
+                    <div class="form-group">
+                        <label for="search">신용조회 동의완료 고객 선택</label>
+                        <div class="input-group address">
+                            <input type="text" id="search" class="form-control" placeholder="" aria-label="Search Addresses" aria-describedby="user-search" inputmode="search"><!--aria-label: 대체 text, aria-describedby: ARIA-labelledby 보다 상세 외 id 속성값을 일치 시킨 그 요소의 내용  /inputmode="search"-->
+                            <button class="btn btn-search img outline-secondary" type="button">검색</button>
+                            <!-- <div class="input-group-prepend">
+                                <button class="btn btn-clear outline-secondary" type="reset"></button>
+                                <button class="btn btn-search img outline-secondary" type="button">검색</button>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="table-type table-row">
+                        <table>
+                            <caption>신용조회 동의 완료 고객 선택 테이블</caption>
+                            <colgroup>
+                                <col width="*%">
+                                <col width="*%">
+                                <col width="33.333%">
+                                <col width="33.333%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th scope="row">고객명</th>
+                                    <th scope="row">연락처</th>
+                                    <th scope="row">동의일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td ><input type="checkbox" name="user_checkbox" id="check1" class="check-custom"><label for="check1"></label></td>
+                                    <td>홍길동</td>
+                                    <td>010-1111-1234</td>
+                                    <td>2023-01-21</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="user_checkbox" id="check2" class="check-custom"><label for="check2"></label></td>
+                                    <td>홍길동</td>
+                                    <td>010-1111-1234</td>
+                                    <td>2023-01-21</td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="user_checkbox" id="check3" class="check-custom"><label for="check3"></label></td>
+                                    <td>홍길동</td>
+                                    <td>010-1111-1234</td>
+                                    <td>2023-01-21</td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="checkbox"><input type="checkbox" name="user_checkbox" id="check4" class="checkbox2" ><label for="check4"></label></td>
+                                    <td>홍길동</td>
+                                    <td>010-1111-1234</td>
+                                    <td>2023-01-21</td>
+                                </tr> -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </form>
+    </div>
+</body>
+
+
+</html>
