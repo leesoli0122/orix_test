@@ -78,7 +78,7 @@ html.font-size-3{ font-size: 24px;}
 .ta-c { text-align:center !important; }
 .ta-l { text-align:left !important; }
 .ta-r { text-align:right !important; }
-.clear { display:block; overflow:visible; width:auto; clear:both; *zoom:1;}
+.clear { display:block; overflow:visible; width:auto; clear:both; zoom:1;}
 .clear:after { display:block; visibility:hidden; height:0; font-size:0; clear:both; content:'';}
 .w100 { width:100% !important; }
 .blind{ position:absolute;overflow:hidden;width:1px;height:1px;padding:0;margin:-1px;border:0;clip:rect(0,0,0,0);}
@@ -614,7 +614,7 @@ div:has(>.file-dwn) + div:has(>.file-dwn) .file-dwn { margin-top:10px; }
 
 /** _금액 바로뒤에 unit 붙는 case - type2 **/
 .form-wrap.type2 label { font-weight:700; font-size:1rem; letter-spacing:-0.4px; }
-.form-wrap.type2 > .input { /*height:50px;*/ margin-top:10px; font-weight:700; color:#var(--main-color01); font-size:1.94445rem; line-height:1.28571; line-height:50px; }
+.form-wrap.type2 > .input { /*height:50px;*/ margin-top:10px; font-weight:700; color:var(--main-color01); font-size:1.94445rem; line-height:1.28571; line-height:50px; }
 .form-wrap.type2 > div.input input { display:block; padding:0; border-bottom:none; font-weight:700; color:transparent; font-size:1.94445rem; line-height:1.28571; caret-color:var(--main-color01); }
 .form-wrap.type2 > div.input input:disabled + .value-wrap .value,
 .form-wrap.type2 > div.input input:disabled + .value-wrap .unit { color:#999999 }

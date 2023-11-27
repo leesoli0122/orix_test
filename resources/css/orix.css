@@ -1,0 +1,11 @@
+@charset "utf-8";
+.tit-area.p_img { display: flex; justify-content: space-between; }
+.p_img p{ padding-left: 45px; }
+.p_img p::before{ content:''; position:absolute; top:-9px; left: 0; width: 36px;; height: 36px;; background:url('../images/common/p_img.png') no-repeat center;  }
+.btn-gray { padding:5px 16px; font-size:0.7778rem; line-height:1.5; border-radius:5px; background:#F2F4F6; }
+.contents .default-wrap .quick-service-area .area-title-wrap { display: flex; padding: 0; margin-bottom: 15px; }
+.quick-service-area .btn-inquiry-choice:after { content:''; position:absolute; top:50%; right:0; width:16px; height:16px; background:url("../images/common/arrow_inquiry.png") 50%/16px auto; transform:translateY(-50%); }
+.quick-service-area > .visaul-info-box_o { padding: 20px; background: #F0E9FA; border-radius: 10px; }
+.visaul-info-box_o .info-tit .f-400 { font-size: .77778rem; }
+.visaul-info-box_o .tit-ok { position: absolute; top: 24px; right: 20px; font-size: 0.88889rem; font-weight: 700; line-height: 1.4375; color: #9458FE; }
+.visaul-info-box_o .btn-cont-wrap { margin-top: 20px; }
